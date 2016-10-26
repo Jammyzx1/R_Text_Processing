@@ -1,5 +1,9 @@
 RunTextAnalysis <- function(path){
   
+  # Load
+  library(tm)
+  library(wordcloud)
+  
   # Load the directory to make a word cloud from (WARNING WILL USE ALL FILES IN THE DIRECTORY) 
   raw <- Corpus (DirSource(path))
   inspect(raw)
